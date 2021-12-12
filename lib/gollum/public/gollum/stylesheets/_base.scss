@@ -9,31 +9,31 @@ $layout-with-sidebar: 70%;
 $layout-with-sidebar-leeway: 1%;
 
 // Colors
-$grey: #ddd;
-$light-grey: #f7f7f7;
-$blue: #4183c4;
-$red: #c00;
-$white: #fff;
-$black: #000000;
+$gray: var(--color-scale-gray-1);
+$light-gray: var(--color-scale-gray-0);
+$blue: var(--color-scale-blue-4);
+$red: var(--color-scale-red-5);
+$white: var(--color-scale-white);
+$black: var(--color-scale-black);
 
-$color-button-border: #d4d4d4;
-$button-text: #333;
+$color-button-border: var(--color-scale-gray-2);
+$button-text: var(--color-scale-gray-8);
 
-$color-button-border-hover: #518cc6;
-$color-button-border-hover-hi: #2a65a0;
-$color-button-background-hover: #3072b3;
-$color-button-background-hover-hi: #599bdc;
+$color-button-border-hover: var(--color-scale-blue-3);
+$color-button-border-hover-hi: var(--color-scale-scale-blue-6);
+$color-button-background-hover: var(--color-scale-scale-blue-5);
+$color-button-background-hover-hi: var(--color-scale-scale-blue-2);
 
-$color-editor-element-border: #eee;
-$color-editor-component-border: #e4e4e4;
-$color-editor-component: #f9f9f9;
+$color-editor-element-border: var(--color-scale-scale-gray-1);
+$color-editor-component-border: var(--color-scale-scale-gray-2);
+$color-editor-component: var(--color-scale-scale-gray-0);
 
 // Font stack
 $font-default: "Helvetica Neue", Helvetica, Arial, freesans, clean, sans-serif;
 $font-console: Inconsolata, Consolas, "Liberation Mono", 'Monaco', 'Andale Mono', 'Courier New', monospace;
 
 // Borders
-$border-standard: 1px solid $grey;
+$border-standard: 1px solid $gray;
 $border-editor-component: 1px solid $color-editor-component-border;
 $border-editor-element: 1px solid $color-editor-element-border;
 

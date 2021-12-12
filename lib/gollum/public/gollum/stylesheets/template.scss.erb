@@ -18,11 +18,11 @@ html {
 }
 
 html, body {
-  color: #333;
+  color: var(--color-scale-gray-8);
 }
 
 body {
-  background-color: white;
+  background-color: $white;
   font: 13.34px $font-default;
   font-size: small;
   line-height: 1.4;
@@ -237,7 +237,7 @@ a {
   }
 
   h2 {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--color-scale-scale-gray-1);
   }
 
   p, blockquote, ul, ol, dl, table, pre {
@@ -285,9 +285,9 @@ a {
   }
 
   blockquote {
-    border-left: 4px solid #DDD;
+    border-left: 4px solid var(--color-scale-gray-1);
     padding: 0 15px;
-    color: #777;
+    color: var(--color-scale-gray-5);
 
     @include children-truncate-margin;
   }
@@ -298,17 +298,17 @@ a {
     border-spacing: 0;
 
     tr {
-      border-top: 1px solid #ccc;
-      background-color: #fff;
+      border-top: 1px solid var(--color-scale-gray-3);
+      background-color: $white;
 
       @include reset-box-leave-border;
 
       &:nth-child(2n) {
-        background-color: #f8f8f8;
+        background-color: var(--color-scale-gray-0);
       }
 
       th, td, table {
-        border: 1px solid #ccc;
+        border: 1px solid var(--color-scale-gray-3);
         text-align: none;
         margin: 0;
         padding: 6px 13px;
@@ -348,7 +348,7 @@ a {
 
       span {
         clear: both;
-        color: #333;
+        color: var(--color-scale-gray-8);
         display: block;
         padding: 5px 0 0;
       }
@@ -430,13 +430,13 @@ a {
     padding: 0 5px;
     white-space: nowrap;
     border: $border-standard;
-    background-color: #f8f8f8;
+    background-color: var(--color-scale-gray-0);
     border-radius: 3px;
   }
 
   pre {
-    background-color: #f8f8f8;
-    border: 1px solid #ccc;
+    background-color: var(--color-scale-gray-0);
+    border: 1px solid var(--color-scale-gray-3);
     font-size: 13px;
     line-height: 19px;
     overflow: auto;
@@ -466,7 +466,7 @@ a {
 /* Table of contents */
 
 .toc {
-  background-color: white;
+  background-color: $white;
   border: $border-standard;
   padding: 5px 10px;
   margin: 0;
@@ -496,7 +496,7 @@ a {
 }
 
 .toc-title {
-  color: #888;
+  color: var(--color-scale-gray-4);
   font-size: 14px;
   line-height: 1.6;
   padding: 2px;
@@ -513,16 +513,16 @@ a {
 /* Highlights */
 
 .highlight {
-  background: #fff;
+  background: $white;
 
   .c {
-    color: #998;
+    color: var(--color-scale-yellow-4);
     font-style: italic;
   }
 
   .err {
-    color: #a61717;
-    background-color: #e3d2d2;
+    color: var(--color-scale-red-6);
+    background-color: var(--color-scale-red-0);
   }
 
   .k, .o {
@@ -530,28 +530,28 @@ a {
   }
 
   .cm, .c1 {
-    color: #998;
+    color: var(--color-scale-yellow-4);
     font-style: italic;
   }
 
   .cp {
-    color: #999;
+    color: var(--color-scale-gray-1);
     font-weight: bold;
   }
 
   .cs {
-    color: #999;
+    color: var(--color-scale-gray-1);
     font-weight: bold;
     font-style: italic;
   }
 
   .gd {
-    color: #000;
-    background-color: #fdd;
+    color: $black;
+    background-color: var(--color-scale-red-0);
 
     .x {
-      color: #000;
-      background-color: #faa;
+      color: $black;
+      background-color: var(--color-scale-red-2);
     }
   }
 
@@ -560,29 +560,29 @@ a {
   }
 
   .gr {
-    color: #a00;
+    color: var(--color-scale-red-6);
   }
 
   .gh {
-    color: #999;
+    color: var(--color-scale-gray-1);
   }
 
   .gi {
-    color: #000;
-    background-color: #dfd;
+    color: $black;
+    background-color: var(--color-scale-green-0);
 
     .x {
-      color: #000;
-      background-color: #afa;
+      color: $black;
+      background-color: var(--color-scale-green-1);
     }
   }
 
   .go {
-    color: #888;
+    color: var(--color-scale-gray-4);;
   }
 
   .gp {
-    color: #555;
+    color: var(--color-scale-gray-7);
   }
 
   .gs {
@@ -590,11 +590,11 @@ a {
   }
 
   .gt {
-    color: #a00;
+    color:  var(--color-scale-red-6);
   }
 
   .gu {
-    color: #800080;
+    color: var(--color-scale-pink-6);
     font-weight: bold;
   }
 
@@ -603,46 +603,46 @@ a {
   }
 
   .kt {
-    color: #458;
+    color: var(--color-scale-blue-6);
     font-weight: bold;
   }
 
   .m {
-    color: #099;
+    color: var(--color-scale-green-4);
   }
 
   .s {
-    color: #d14;
+    color: var(--color-scale-red-5);
   }
 
   .na, .no, .nv, .vc, .vg, .vi {
-    color: #008080;
+    color: var(--color-scale-green-5);
   }
 
   .nb {
-    color: #0086B3;
+    color: var(--color-scale-blue-4);
   }
 
   .nc {
-    color: #458;
+    color: var(--color-scale-blue-6);
     font-weight: bold;
   }
 
   .ni {
-    color: #800080;
+    color: var(--color-scale-pink-6);
   }
 
   .ne, .nf {
-    color: #900;
+    color: var(--color-scale-red-6);
     font-weight: bold;
   }
 
   .nn {
-    color: #555;
+    color: var(--color-scale-gray-7);
   }
 
   .nt {
-    color: #000080;
+    color: var(--color-scale-blue-9);
   }
 
   .ow {
@@ -650,60 +650,60 @@ a {
   }
 
   .w {
-    color: #bbb;
+    color: var(--color-scale-gray-3);
   }
 
   .mf, .mh, .mi, .mo, .il {
-    color: #099;
+    color: var(--color-scale-green-4);
   }
 
   .sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .s1 {
-    color: #d14;
+    color: var(--color-scale-red-5);
   }
 
   .sr {
-    color: #009926;
+    color: var(--color-scale-green-3);
   }
 
   .ss {
-    color: #990073;
+    color: var(--color-scale-pink-6);
   }
 
   .bp {
-    color: #999;
+    color: var(--color-scale-gray-1);
   }
 
   .gc {
-    color: #999;
-    background-color: #EAF2F5;
+    color: var(--color-scale-gray-1);
+    background-color: var(--color-scale-gray-0);
   }
 
   .gg {
-    color: #000000a0;
+    color: rgba($black, 0.63);
   }
 }
 
 .type-csharp {
   .highlight {
     .k, .kt {
-      color: #00F;
+      color: var(--color-scale-blue-7);
     }
 
     .nf {
-      color: #000;
+      color: $black;
       font-weight: normal;
     }
 
     .nc {
-      color: #2B91AF;
+      color: var(--color-scale-green-4);
     }
 
     .nn {
-      color: #000;
+      color: $black;
     }
 
     .s, .sc {
-      color: #A31515;
+      color: var(--color-scale-red-6);
     }
   }
 }

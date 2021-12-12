@@ -37,8 +37,8 @@
         }
 
         &.line_numbers {
-          border-right: 1px solid #999;
-          color: #999;
+          border-right: 1px solid var(--color-scale-gray-1);
+          color: var(--color-scale-gray-1);
           padding: 0 0 0 0.5em;
         }
       }

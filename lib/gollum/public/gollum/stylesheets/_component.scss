@@ -2,7 +2,7 @@
 
 // Sets a reusable component container.
 @mixin component-base {
-  background-color: $light-grey;
+  background-color: $light-gray;
   border: $border-standard;
   border-radius: 0.5em;
 }
@@ -10,11 +10,11 @@
 // Sets a reusable section header component.
 @mixin section-header {
   h1 {
-    color: #999;
+    color: var(--color-scale-gray-1);
     font-weight: normal;
 
     strong {
-      color: #000;
+      color: $black;
       font-weight: bold;
     }
   }
@@ -48,20 +48,20 @@
   font-weight: bold;
 
   color: $button-text;
-  background-color: $light-grey;
+  background-color: $light-gray;
   border: 1px solid $color-button-border;
-  text-shadow: 0 1px 0 #fff;
+  text-shadow: 0 1px 0 $white;
 
   cursor: pointer;
 
-  @include vertical-gradient(#f4f4f4, #ececec);
+  @include vertical-gradient(var(--color-scale-gray-0), var(--color-scale-gray-1));
   border-radius: 3px;
 
   &:hover {
-    color: #fff;
+    color: $white;
     background: $color-button-background-hover;
     border-color: $color-button-border-hover $color-button-border-hover $color-button-border-hover-hi;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    text-shadow: 0 -1px 0 rgba($black, 0.3);
 
     text-decoration: none;
 

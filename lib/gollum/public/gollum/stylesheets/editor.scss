@@ -48,7 +48,7 @@ a.tabnav-tab:focus {
       width: 100%;
 
       &.ph {
-        color: #999;
+        color: var(--color-scale-gray-1);
       }
 
       .ie & {
@@ -101,10 +101,10 @@ a.tabnav-tab:focus {
     a {
       &.function-button {
         float: left;
-        
+
         overflow: hidden;
         margin: 1px 1px 0 0;
-        
+
         @include editor-button-size;
         @include button-base;
 
@@ -114,7 +114,7 @@ a.tabnav-tab:focus {
 
         span {
           display: block;
-          
+
           @include button-sprites;
           @include text-conceal-simple;
           @include editor-button-size;
@@ -167,7 +167,7 @@ a.tabnav-tab:focus {
     button {
       margin-bottom: 6px;
     }
-    
+
 
     h4 {
       font-size: 1.6em;
@@ -176,7 +176,7 @@ a.tabnav-tab:focus {
 
       padding: 0.25em 0 0 0.3em;
 
-      text-shadow: 0 -1px 0 #fff;
+      text-shadow: 0 -1px 0 $white;
       line-height: $editor-button-size;
 
       @include desktop-breakpoint {
@@ -187,7 +187,7 @@ a.tabnav-tab:focus {
 
   .collapsed {
     h4 {
-      color: #bbb;
+      color: var(--color-scale-gray-3);
     }
 
     a.button {
@@ -235,7 +235,7 @@ a.tabnav-tab:focus {
     margin-top: 0;
 
     &.ph {
-      color: #000;
+      color: $black;
     }
   }
 
@@ -272,12 +272,12 @@ a#function-search { @include editor-button(16); }
   }
 
   &.dragging {
-    box-shadow: 0 0 10px #AAE000;
+    box-shadow: 0 0 10px var(--color-scale-green-2);
   }
 
   &.uploading {
     opacity: 1;
-    
+
     & + div {
       display: block;
     }
@@ -330,7 +330,7 @@ a#function-search { @include editor-button(16); }
       height: 100%;
       width: auto;
       padding: 0.2em 1em;
-      text-shadow: 0 -1px 0 #fff;
+      text-shadow: 0 -1px 0 $white;
       font-size: 0.8em;
 
       @include desktop-breakpoint {
@@ -338,8 +338,8 @@ a#function-search { @include editor-button(16); }
       }
 
       &:hover {
-        background: #fff;
-        border-color: #f0f0f0;
+        background: $white;
+        border-color: var(--color-scale-gray-0);
         text-decoration: none;
 
         box-shadow: none;
@@ -347,12 +347,12 @@ a#function-search { @include editor-button(16); }
 
       &.selected {
         border: $border-editor-element;
-        border-bottom-color: #e7e7e7;
+        border-bottom-color: var(--color-scale-gray-1);
         border-width: 1px 0;
-        background: #fff;
-        color: #000;
+        background: $white;
+        color: $black;
 
-        box-shadow: 0 1px 2px #f0f0f0;
+        box-shadow: 0 1px 2px var(--color-scale-gray-0);
       }
     }
   }
@@ -363,12 +363,12 @@ a#function-search { @include editor-button(16); }
 }
 
 #gollum-editor-help-list {
-  background: #fafafa;
+  background: var(--color-scale-gray-0);
   border-right: $border-editor-element;
 }
 
 #gollum-editor-help-wrapper {
-  background: #fff;
+  background: $white;
   overflow: auto;
   height: 17em;
   padding: 1em;

@@ -29,7 +29,7 @@
     display: block;
   }
 
-  
+
 }
 
 #gollum-dialog-dialog-inner {
@@ -38,10 +38,10 @@
   height: 100%;
   padding: 1em;
   overflow: hidden;
-  background-color: white;
-  webkit-box-shadow: 8px 7px 21px 0px rgba(0,0,0,0.68);
-  moz-box-shadow: 8px 7px 21px 0px rgba(0,0,0,0.68);
-  box-shadow: 8px 7px 21px 0px rgba(0,0,0,0.68);
+  background-color: $white;
+  webkit-box-shadow: 8px 7px 21px 0px rgba($black, 0.68);
+  moz-box-shadow: 8px 7px 21px 0px rgba($black, 0.68);
+  box-shadow: 8px 7px 21px 0px rgba($black, 0.68);
 
   @include four-edge-position(0px);
 
@@ -73,7 +73,7 @@
 
   h4 {
     border-bottom: $border-standard;
-    color: #000;
+    color: $black;
     font-size: 1.8em;
     line-height: normal;
     font-weight: bold;
@@ -92,7 +92,7 @@
   @include mediummobile-breakpoint {
     overflow: hidden;
 
-    @include vertical-gradient(#f7f7f7, #ffffff);
+    @include vertical-gradient(var(--color-scale-gray-0), $white);
   }
 
   @include desktop-breakpoint {
@@ -118,7 +118,7 @@
       }
 
       label {
-        color: #000;
+        color: $black;
         display: block;
         font-size: 1.2em;
         font-weight: bold;
@@ -137,7 +137,7 @@
 
       span.context {
         font-size: .9em;
-        color: #666;
+        color: var(--color-scale-gray-6);
 
         span.path {
           font-family: $font-console;
